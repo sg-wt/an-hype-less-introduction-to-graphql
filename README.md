@@ -8,10 +8,10 @@ git clone https://github.com/sg-wt/an-hype-less-introduction-to-graphql.git
 
 ## What am I going to clone?
 
-- [ ] An example of **GraphQL API** with **NestJS**
-- [ ] An example of a **GraphQL API consumer** with **ReactJS**
+- [x] A minimalist **GraphQL implementation** to understand the fundamentals
+- [ ] A **GraphQL API** with **Express.js**
 - [ ] Some exercises around **GraphQL**
-   
+
 ## Sources
 
 (Available soon)
