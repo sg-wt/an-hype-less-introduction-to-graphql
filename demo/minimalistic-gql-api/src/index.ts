@@ -42,9 +42,6 @@ const root = {
 
 const query: string = `
   {
-    humans {
-      firstName
-    }
     human(id: 2) {
       firstName
       lastName

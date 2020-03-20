@@ -1,0 +1,36 @@
+type Query {
+  Tweet(id: ID!): Tweet
+  Tweets(limit: Int, sortField: String, sortOrder: String): [Tweet]
+  User(id: ID!): User
+}
+
+type Mutation {
+  createTweet(body: String): Tweet
+  deleteTweet(id: ID!): Tweet
+}
+
+type Tweet {
+  id: ID!
+  body: String
+  date: Date
+  Stats: Stat
+  Author: User
+}
+
+type User {
+  id: ID!
+  username: String
+  firstName: String
+  lastName: String
+  fullName: String
+  avatarUrl: String
+}
+
+type Stat {
+  tweetId: ID!
+  likes: Int
+  retweets: Int
+  responses: Int
+}
+
+scalar Date
